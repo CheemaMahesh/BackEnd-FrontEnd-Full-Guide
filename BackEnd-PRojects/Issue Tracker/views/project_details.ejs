@@ -1,0 +1,84 @@
+<html>
+    <head><title>  </title>
+        <link rel="stylesheet" href="/css/project_details.css">
+    </head>
+    <body>
+   <!-- ==================================================================Main================================================ -->
+        <div class="main">
+            <!-- <div class="home-btn"><a href="/" class="home-btn-a">Home</a></div> -->
+            <!-- ====================================================Display Project Details================================== -->
+        <div id="project-display-id" class="project-display-c">
+            <div class="display-name"><h2><%=details.name%></h2> </div>
+               <div class="display-description"><%=details.description%></div> 
+               <div class="display-author"> <button>-------- <%=details.author%></button></div>
+               <form class="form" id="search-form">
+                <input id="input">
+                <button id="search">Search</button>
+              </form>
+              
+                <!-- ===============================================Form to create an Issue============================================================ -->
+       
+        </div>
+
+
+<!-- ============================================================desplay-issues-------========================================= -->
+<div class="issu-display-div-c">
+    <div class="issue-c" id="issue-i">
+        <div class="dropdown">
+            <button class="dropbtn">Raise an Issue</button>
+            <div class="dropdown-content">
+                <form action="/generates/issues" method="POST">
+              <input type="text" name="title" placeholder="Title..........................." required id="ddc-i-o"><br>
+              <input type="hidden" name="project" value="<%= details._id%>">
+              <textarea  cols="30" rows="3" name="description" placeholder="Drop info about issue here........" required id="dd-t-o"></textarea>
+              <!-- <input type="text" name="labels" placeholder="labels" required> -->
+              <select name="labels" multiple id="dd-s-o" >
+                <option value="Java">Java</option>
+                <option value="JavaScript">JavaScript</option>
+                <option value="HTML">HTML</option>
+                <option value="CSS">CSS</option>
+                <option value="Python">Python</option>
+                <option value="NodeJs">NodeJs</option>
+                <option value="ReactJs">ReactJs</option>
+                <option value="Express">Express</option>
+                <option value="Ruby">Ruby</option>
+                <option value="C++">C++</option>
+                <option value="PHP">PHP</option>
+                <option value="DSA">DSA</option>
+                <option value=".Net">.Net</option>
+                <option value="Database">Database</option>
+                <option value="MongoDB">MongoDB</option>
+                <option value="SQL">SQL</option>
+                <option value="Frontend">Front-End</option>
+                <option value="Backend">Back-End</option>
+                <option value="Front-End">Front-End</option>
+                <option value="EJS">EJS</option>
+                <option value="ManualAuthentication">ManualAuthentication</option>
+                <option value="Authentication">Authentication</option>
+                <option value="Other">Other</option>
+
+              </select>
+              <input type="text" name="author" placeholder="_______Author......"required id="dd-i-t"> 
+              <button id="dd-btn">Create issue</button>
+            </form>
+            </div>
+          </div>
+    </div>
+    <div  class="display-issues"> <ol>
+        <%for(let m of details.PP){%>
+            <li>
+                <span id="title"><%=m.title%></span>
+                <span id="description" class="mahi"><%=m.description%></span>
+                <span id="labels"class="mahi"><%=m.labels%></span>
+                <span id="author" class="mahi">-------<%=m.author%></span>
+            </li>
+            <%}%>
+        </ol></div>
+   
+</div>
+
+
+    </div>
+    <script src="/js/project_details.js"></script>
+    </body>
+</html> 

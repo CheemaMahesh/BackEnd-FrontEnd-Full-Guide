@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<head><title>EmployeesProfile Page</title>
+  <link rel="stylesheet" href="/css/empfa.css">
+
+</head>
+<body>
+
+   <div class="empPp"><h1>EmployeesProfilePage</h1></div> 
+
+  <div class="main"">
+     <div class="colO">
+    <div class="emp-name"><%=user.name%></div>
+    <div class="emp-email"><%=user.email%></div>
+     </div>
+     <div class="colT">
+        <div class="adm-tasks">
+          <div><a href="/employee/make/<%= user._id %>"><button class="make-admin-button">make admin</button></a></div>
+          <div><a href="/employee/remove/<%=user._id%>"><button class="delete-user-button">Delete User</button></a></div>
+          
+            <div>
+                <form action="/employee/asign" method="POST">
+                  <div class="dropdown">
+                    <input type="hidden" value="<%=user._id%>" name="id">
+                    <select class="dropdown-select" name="assigned" multiple >
+                    
+                      <%for(let a of allUsers){%>
+                          <%if(user.email!=a.email&&a.admin!=true){%>
+                            <option value="<%= a._id %>"><%= a.name %></option>
+                            <%}%>
+                        <%}%>
+
+
+
+                    </select>
+                    <button class="dropdown-button">Submit</button>
+                  </div>
+                </form>
+              </div> 
+        </div>
+     </div>
+     <div class="colTH">
+      <div class="reviews-display"><h1>Reviews</h1></div>
+      <div class="reviews">
+                <ul>
+                  <%for(let b of reviews){%>
+                    <%if(b.author){%>
+                    <li><%=b.content%><br>
+                     
+                    <b><i>----------By <%=b.author.email%></i></b></li>
+                    <%}%>
+                    <%}%>
+                </ul>
+      </div>
+     </div>
+  </div>
+
+
+</body>
+</html>

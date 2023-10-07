@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<head><title>Employee Reviews Page</title>
+    <link rel="stylesheet" href="/css/employee_review.css">
+
+</head>
+<body>
+
+    <h1>EMP Review Page</h1>
+        <ol>
+    <%for(let a of feedbacks){%>
+
+        <li><%=a.name%>&emsp;<%=a.email%>
+            <form class="form-container" action="/employee/feedback" method="POST">
+            <input type="hidden" value="<%=a._id%>" name="id">
+            <input type="hidden" value="<%=EMP._id%>" name="user">
+            <textarea class="form-input" cols="30" rows="3" name="content" placeholder="Type here....." required></textarea>
+            <button class="form-button" type="submit">Feedback</button>
+        </form>
+        </li>
+
+        <%}%>
+    </ol>
+</body>
+</html>

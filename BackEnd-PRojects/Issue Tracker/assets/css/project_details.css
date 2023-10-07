@@ -1,0 +1,286 @@
+body{
+    /* color: darkslategray; */
+    height:720px;
+    font-style: oblique;
+    background-image: url('issue.jpeg');
+}
+
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropbtn {
+    /* background-color: #bfc151; */
+    background-image: linear-gradient(to right,rgb(161, 212, 20),rgb(17, 36, 199));
+    color: #dcdeb4;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 2rem;
+    font-weight: 1000;
+
+
+  }
+  
+  .dropdown-content {
+    width:300px;
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    background-image: linear-gradient(to right,rgb(161, 212, 20),rgb(17, 36, 199));
+    border: 2px solid black;
+  }
+  #ddc-i-o{
+    width:300px;
+    background-image: linear-gradient(to right,rgb(161, 212, 20),rgb(17, 36, 199));
+    color: #f1f1f1;
+    /* border:0px; */
+    font-weight: bold;
+
+  }
+  #dd-t-o{
+    width:300px;
+    background-image: linear-gradient(to right,rgb(161, 212, 20),rgb(17, 36, 199));
+/* border: 0px; */
+color: #181816;
+font-weight: bold;
+
+  }
+  #dd-s-o{
+    width:300px;
+    background-image: linear-gradient(to right,rgb(161, 212, 20),rgb(17, 36, 199));
+  }
+  #dd-s-o option{
+    color:#ffffff;
+    font-weight: bold;
+  }
+  #dd-i-t{
+    width:300px;
+    /* border:0px; */
+    background-image: linear-gradient(to right,rgb(161, 212, 20),rgb(17, 36, 199));
+    font-weight: bold;
+    color: white;
+
+
+
+  }
+  #dd-btn{
+    margin-left: 200px;
+    margin-top: 10px;
+    color: white;
+    background-image: linear-gradient(to right,rgb(8, 18, 18),rgb(39, 176, 18));
+
+  }
+  .dropdown-content form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .dropdown-content input {
+    color: #333;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content input:hover {
+    background-color: #f1f1f1;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+
+  select{
+    height:20px;
+    width:100px;
+    overflow: scroll;
+  }
+  select::-webkit-scrollbar {
+    display: none;
+  }
+  /* -----------------------------------Styling for issues--------------------------------------- */
+  .issu-display-div-c{
+    height:150px;
+    width:500px;
+    overflow: scroll;
+  }
+  .issu-display-div-c::-webkit-scrollbar {
+    display: none;
+  }
+  ::placeholder {
+    color:#ffffff;
+    font-weight: bold;
+  }
+
+  /* ====================================================Project-Details-Styling================================================= */
+
+
+  /* ------------------------------------main--------------------------------- */
+  .main{
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+
+  }
+  /* -------------------------home-button----------------------------- */
+  .home-btn{
+    height:40px;
+    width:100%;
+    background-color: cyan;
+    font-size: 2em;
+  }
+  .home-btn-a{
+    text-decoration: none;
+    color:rgb(170, 89, 61);
+    font-weight: bold;
+  }
+  /* --------------------------project-details--------------------------- */
+  #project-display-id {
+    width: 70%;
+    height: 730px;
+    display: flex;
+    flex-direction: column;
+}
+
+.display-name {
+    height: 8%;
+    width: 100%;
+    background-image: linear-gradient(to right, rgb(114, 102, 190), cyan); /* Update the gradient colors */
+    font-size: 1.2em; /* Slightly increase the font size for better visibility */
+    padding-left: 10px;
+}
+
+.display-name h2 {
+    font-weight: bold; /* Set a stronger font weight */
+    color: white; /* Change the font color to white */
+}
+
+.display-description {
+    height: 75%;
+    width: 100%;
+    background-color: ghostwhite;
+    color: #151414;
+    font-weight: bold;
+    overflow: scroll;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px; /* Add padding for better appearance */
+}
+
+.display-description::-webkit-scrollbar {
+    display: none;
+}
+
+.display-author {
+    height: 8%;
+    display: flex;
+    flex-direction: row-reverse;
+    padding-right: 10px;
+    align-items: center;
+}
+
+.display-author button {
+    border-radius: 0.5rem;
+    height: 50%;
+    background-image: linear-gradient(to right, rgb(219, 184, 14), cyan); /* Update the gradient colors */
+    font-weight: bold;
+    color: #0D8873; /* Change the font color to a darker green */
+    width: 30%;
+}
+
+  /* -----------------------------------------------------issue-information-------------------------------------------------- */
+  .issu-display-div-c{
+    height:720px;
+    width:30%;
+    background-color:rgb(61, 152, 152);
+    color:#f1f1f1;
+  }
+  .display-issues{
+    overflow:scroll;
+    height:92%;
+    width:100%;
+  }
+  .display-issues::-webkit-scrollbar{
+    display: none;
+  }
+  ol li{
+    border-bottom: 2px solid black;
+    border-top:2px solid black;
+    margin-bottom: 10px;
+    color:rgb(9, 4, 7);
+    font-weight: 1000;
+    font-size: 1.3rem;
+    display: flex;
+    flex-direction: column;
+  }
+  #title{
+    color:rgb(226, 209, 219);
+    font-weight: 1000;
+    font-size: 1.5rem;
+  }
+  #labels{
+    color: white;
+    font-size: 1rem;
+
+  }
+  #author{
+    margin-left: 60%;
+    margin-top: 7%;
+    color: white;
+    font-size:1rem;
+
+  }
+  #description{
+    color:white;
+    font-size: 1rem;
+
+  }
+
+  .Match{
+    background-color: gold;
+    font-size: 3rem;
+  }
+
+  /* ========================================================================Search button=============================================================== */
+  .form {
+    display: flex;
+    align-items: center;
+}
+
+#input {
+    padding: 10px;
+    border: 2px solid #ccc; /* Increase the border width for a bolder look */
+    border-radius: 4px;
+    flex: 1; /* Allow the input to take up the remaining space */
+    font-size: 16px; /* Increase the font size for better readability */
+}
+
+#search {
+    padding: 10px 15px; /* Slightly increase the padding for a larger button */
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 10px; /* Adjust the margin for better spacing */
+    transition: background-color 0.2s; /* Add a smooth transition on hover */
+}
+
+#search:hover {
+    background-color: #45a049;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Add a subtle box shadow on hover */
+}
+
+  
+
+  
+

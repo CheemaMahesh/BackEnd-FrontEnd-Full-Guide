@@ -1,0 +1,37 @@
+<html>
+    <!-- ----------------------------------------head-tag--------------------------------------------------------- -->
+    <head>
+        <title><%=title%></title>
+        <link rel="stylesheet" href="/css/home.css">
+    </head>
+
+    <!-- ==============================================body============================================================ -->
+    <body>
+        <!-- ====================================main================================ -->
+
+        <div class="mains" id="main">
+            <!-- ==================================Form to create a project=========================================== -->
+    <div class="Porject-c" id="project-i">
+        <form action="/create/projects" method="POST">
+            <input type="text" name="name" placeholder="Project-Name" required>
+            <textarea cols="30" rows="3" name="description" required id="textarea" placeholder="Project........................"></textarea>
+            <input type="text" name="author" placeholder="Author" required>
+            <button> Create</button>
+        </form>
+    </div>
+<!-- =================================================Div to display-Projects======================================== -->
+    <div class="p-display-c" id="p-display-i">
+        <ol>
+        <%for(let i of projects){%>
+            <a href="/project/details/<%=i._id%>" id="p-display-a-i">
+            <li><span><h3><b id="bbb"><%=i.name%></b></h3></span>
+                <div id="div"><p><%=i.description%></p></div>
+               <div id="divs"><b>------------<%=i.author%></b></div> 
+            </li>
+        </a>
+            <%}%>
+        </ol>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<head><title>Home Page</title>
+    <link rel="stylesheet" href="/css/home.css">
+</head>
+<body>
+
+<%if(locals.user){%>
+    <div class="user-existed">
+
+        <div class="views">
+    <%if(user.admin==true){%>
+      <!-- ===============================================================Admin-View=================================================================== -->
+        <div class="admin-view view">
+            <div class="employees"> <h1>
+                EMPLOYEES
+            </h1></div>
+          <div class="employee-info">
+            <ol class="employee-info-ol">
+                <%for(let i of employees){%>
+                                     <%if(i.admin!==true){%>
+                        <li class="employee-info-ol-li">  
+                            <div class="emp-name"><b><i><%=i.name%></i></b></div>
+                            <div class="emp-name"><b><i><%=i.email%></i></b></div>
+                            <div class="emp-name"><b><i><a href="/employee/profile_view/<%=i._id%>">View Employee</a></i></b></div>
+                        </li>
+                    <%}%>
+                <%}%>
+            </ol>
+          </div>
+        </div>
+    <%}else{%>
+        <!-- <h1>Feedbacks to be submited</h1> -->
+        <!-- =========================================================================Employee-View============================================================== -->
+        <div class="employee-view view">
+
+            <!-- <ol>
+              <%for(let a of locals.user.feedbacks){%>
+                    <li><b><%=a%></b></li>
+                    <%}%>
+            </ol> -->
+<a href="/employee/reviews/<%=locals.user._id%>"> <button >Go to Work</button></a>
+           
+
+        </div>
+
+
+
+
+
+
+
+        <%}%>
+    </div>
+        <div calss="authentication-btns">
+   <div class="aa"> <button class="button"><a href="/register/profile"><%=user.name%></a></button><br></div>
+   <div class="aa">
+    
+<%if(user.admin){%>
+   <div class="dropdown">
+    <button class="a">Register</button>
+    <div class="dropdown-content">
+      <form action="/employee/add" method="POST">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+        
+        <label for="confirm-password">Confirm Password:</label>
+        <input type="password" id="confirm-password" name="confirmpassword" required>
+        
+        <input type="submit" value="Submit">
+      </form>
+    </div>
+  </div>
+  <%}%>
+</div>
+
+   <div class="aa"> <button class="buttons"><a href="/register/sign-out">SignOut</a></button></div>
+</div>
+</div>
+    <%}else{%>
+        <div class="user-isNot-existed">
+        <button><a href="/register/signup" class="make-admin-button">SignUp</a></button><br>
+        <button><a href="/register/login" class="make-admin-button">Login</a></button>
+    </div>
+        <%}%>
+   
+
+</body>
+</html>

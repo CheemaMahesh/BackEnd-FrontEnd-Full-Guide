@@ -1,0 +1,165 @@
+body{
+    background-color:rgb(170, 184, 184);
+}
+a{
+    text-decoration: none;
+    color: bisque;
+}
+
+h1{
+    color:greenyellow;
+}
+/* =======================================================mains============================================ */
+.mains{
+    /* height:1000px; */
+    overflow: hidden;
+    width:1505px;
+    /* background-color:rgb(114, 102, 190); */
+    background-image: linear-gradient(to right,rgb(114, 102, 190),green);
+
+}
+
+/* =================================================Porject-c(Styling for create Project)============================================= */
+/* Container */
+.Porject-c {
+  height: 100px;
+  width: 100%;
+  background-color: rgb(114, 102, 190);
+  background-image: linear-gradient(to right, rgb(114, 102, 190), green);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Form */
+.Porject-c form {
+  height: 80%;
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+/* Input fields */
+input, textarea {
+  height: 50%;
+  width: 30%;
+  border: 2px solid #00BFFF; /* Change the color to a light blue */
+  border-radius: 1rem;
+  padding: 5px; /* Add some padding for better appearance */
+}
+
+#textarea {
+  height: 70%;
+  width: 40%; /* Increase the width slightly for better readability */
+  resize: none; /* Remove the resizing handle */
+  padding: 5px;
+}
+
+/* Button */
+button {
+  height: 50%;
+  width: 20%;
+  border: none;
+  border-radius: 1rem;
+  background-color: sienna;
+  background-image: linear-gradient(to right, rgb(219, 184, 14), cyan);
+  font-weight: bold;
+  font-size: 1.5rem;
+  outline: none;
+  cursor: pointer; /* Show the pointer cursor on hover */
+}
+
+button:hover {
+  background-image: linear-gradient(to right, rgb(24, 200, 24), cyan);
+  font-size: 1.8rem; /* Slightly reduce the font size on hover */
+}
+
+/* Placeholder styles */
+::placeholder {
+  color: #0D8873; /* Change the color to a darker green */
+  font-style: italic;
+  font-size: 1.2rem; /* Slightly reduce the font size for better fit */
+  font-weight: bold;
+}
+
+/* Optional: Center align the placeholder text */
+input::placeholder, textarea::placeholder {
+  text-align: center;
+}
+
+
+
+  /* =============================================================Styles for Displayed-projects======================================================== */
+  ol{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -30px;
+  }
+
+  ol a{
+    height:300px;
+    width: 720px;
+    overflow: scroll;
+    /* border: 2px solid rgb(5, 10, 10); */
+    border-bottom: 2px solid black;
+    border-right: 2px solid black;
+  }
+  ol a::-webkit-scrollbar {
+    display: none;
+  }
+  ol a:hover{
+    background-image: linear-gradient(to right,rgb(36, 184, 207),rgb(199, 38, 65));
+  }
+
+  ol span{
+    height:15%;
+    width:50%;
+    font-size: 2rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+ ol span b{
+    height:100%;
+    width:50%;
+    background-color: rgb(204, 214, 177);
+    /* margin-left: 50px; */
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+  }
+  ol #div{
+    height:60%;
+    width:100%;
+    overflow: scroll;
+    padding: 10px;
+
+  }
+ 
+
+  ol #div::-webkit-scrollbar {
+    display: none;
+  }
+
+  ol #divs{
+    height:15%;
+    width:100%;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    /* padding: 10px; */
+    /* background-color: rgb(204, 214, 177); */
+
+  }
+  ol #divs b{
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+    background-color: rgb(204, 214, 177);
+    font-size: 2rem;
+    color:black;
+    /* border: 2px solid green; */
+  }
+  #bbb{
+    color: rgb(48, 47, 47);
+  }

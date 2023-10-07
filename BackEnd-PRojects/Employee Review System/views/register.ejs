@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<head><title>SignUp Page</title>
+<style>/* Container for the registration form */
+    .registration-form-container {
+      width: 300px;
+      margin: 0 auto;
+    }
+    
+    /* Registration form input fields */
+    .registration-form-container input[type="text"],
+    .registration-form-container input[type="email"],
+    .registration-form-container input[type="password"] {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    
+    .registration-form-container input[type="text"]:focus,
+    .registration-form-container input[type="email"]:focus,
+    .registration-form-container input[type="password"]:focus {
+      outline: none;
+      border-color: #4CAF50; /* Highlight border on focus */
+    }
+    
+    /* Registration form submit button */
+    .registration-form-container button[type="submit"] {
+      background-color: #4CAF50;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      width: 100%;
+    }
+    
+    .registration-form-container button[type="submit"]:hover {
+      background-color: #45a049; /* Darker shade on hover */
+    }
+    
+    /* Container for the Login button */
+    .login-button-container {
+      text-align: center;
+      margin-top: 20px;
+    }
+    
+    /* Login button */
+    .login-button {
+      background-color: #3498db;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      text-decoration: none;
+    }
+    
+    .login-button a {
+      color: white;
+      text-decoration: none;
+    }
+    
+    .login-button:hover {
+      background-color: #2980b9; /* Darker shade on hover */
+    }
+    </style>
+</head>
+<body>
+
+    <div class="registration-form-container">
+        <form action="/register/create" method="POST">
+          <input type="text" name="name" placeholder="Name" required>
+          <input type="email" name="email" placeholder="Email" required>
+          <input type="password" name="password" placeholder="Password" required>
+          <input type="password" name="conformPassword" placeholder="Confirm Password" required>
+          <button type="submit">Submit</button> 
+        </form>
+      </div>
+      
+      <div class="login-button-container">
+        <button class="login-button"><a href="/register/login">Login</a></button>
+      </div>
+      
+
+
+</body>
+</html>

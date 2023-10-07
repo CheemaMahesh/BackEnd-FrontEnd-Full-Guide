@@ -1,0 +1,116 @@
+
+.empPp{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+  }
+
+  .main {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+  }
+
+  .colO,
+  .colT,
+  .colTH {
+    background-color: white;
+    padding: 20px;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  .colO,
+  .colT {
+    flex-basis: 30%;
+  }
+
+  .colTH {
+    flex-basis: 20%;
+  }
+
+  .emp-name {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+
+  .emp-email {
+    color: #666;
+    margin-bottom: 20px;
+  }
+
+  .adm-tasks {
+    margin-top: 20px;
+  }
+
+  .dropdown-select {
+    width: 100%;
+    height: 120px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+    font-size: 16px;
+  }
+
+  .dropdown-button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+
+  .dropdown-button:hover {
+    background-color: #45a049;
+  }
+
+
+  /* Styling for the "make admin" button */
+.make-admin-button {
+  background-color: green;
+  color: white; /* Text color */
+  padding: 10px 20px; /* Padding around the text */
+  border: none; /* Remove the default button border */
+  border-radius: 5px; /* Rounded button edges */
+  font-size: 16px; /* Font size of the text */
+  text-decoration: none; /* Remove underline from the anchor */
+  display: inline-block; /* Make the button behave like a block element */
+  cursor: pointer; /* Show a pointer cursor on hover */
+  /* Add any other desired styles here */
+}
+
+.make-admin-button:hover {
+  background-color: darkgreen; /* Change background color on hover */
+}
+
+/* Styling for the "Delete User" button */
+.delete-user-button {
+  background-color: red;
+  color: white; /* Text color */
+  padding: 10px 20px; /* Padding around the text */
+  border: none; /* Remove the default button border */
+  border-radius: 5px; /* Rounded button edges */
+  font-size: 16px; /* Font size of the text */
+  text-decoration: none; /* Remove underline from the anchor */
+  display: inline-block; /* Make the button behave like a block element */
+  cursor: pointer; /* Show a pointer cursor on hover */
+  /* Add any other desired styles here */
+}
+
+.delete-user-button:hover {
+  background-color: darkred; /* Change background color on hover */
+}
+

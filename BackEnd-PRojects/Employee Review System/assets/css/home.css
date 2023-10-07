@@ -1,0 +1,333 @@
+body{
+    background-image: linear-gradient(to right,rgb(154, 167, 154),rgb(222, 199, 155));
+}
+
+
+/* ```````````````````````````````````````````````````````````````````````````User-Existd-Part``````````````````````````````````````````````````````````````````` */
+.user-existed{
+    height :675px;
+    width: 1510px;
+    background-color: cyan;
+    display: flex;
+    flex-direction: row;
+    background-image: linear-gradient(to right,rgb(154, 167, 154),rgb(222, 199, 155));
+
+}
+.views{
+    height:100%;
+    width:80%;
+/* background-color: red; */
+}
+/* =============================================================================Admin-View=========================================================================== */
+.admin-view{
+    height:100%;
+    width:100%;
+    /* background-color: green; */
+}
+
+.employees{
+    height:5%;
+    width:100%;
+    background-color: antiquewhite;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.employee-info{
+    height:95%;
+    width:100%;
+    background-color: cadetblue;
+    /* display: flex;
+    flex-direction: column; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+.employee-info::-webkit-scrollbar{
+    display: none;
+}
+.employee-info-ol{
+    height:100%;
+    width: 100%;
+    /* background-color: blueviolet; */
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    overflow: scroll;
+}
+.employee-info-ol::-webkit-scrollbar{
+    display: none;
+}
+.employee-info-ol-li{
+    height:10%;
+    width:100%;
+    background-color: antiquewhite;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 2px solid black;
+   
+}
+.nameAemail{
+    height:100%;
+    width:20%;
+    background-color: goldenrod;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* overflow: hidden; */
+}
+.reviews{
+    background-color: green;
+    height:100%;
+    width:60%;
+}
+.admin-actions{
+    height:100%;
+    width:20%;
+    background-color: goldenrod;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    /* overflow: hidden; */
+}
+
+
+
+
+
+/* ==========================dropdown==================== */
+/* Dropdown Button */
+.dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  .dropdown button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+  }
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 200px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  /* Form Inputs */
+  form {
+    margin-top: 20px;
+  }
+  label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  input[type="text"],
+  input[type="email"],
+  input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  
+  /* =============================drop-down-2================================================== */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+    
+  }
+  
+  .dropdown-select {
+    width: 400px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #fff;
+    font-size: 14px;
+    color: #333;
+    appearance: none;
+    -webkit-appearance: none;
+    background-image: url("path/to/dropdown-icon.png");
+    background-repeat: no-repeat;
+    background-position: right center;
+    cursor: pointer;
+    
+  }
+  
+  .dropdown-select::-ms-expand {
+    display: none;
+  }
+  
+  .dropdown-button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: #4CAF50;
+    color: #fff;
+    cursor: pointer;
+    
+  }
+  
+  .dropdown-select:focus {
+    outline: none;
+    box-shadow: 0 0 4px #4CAF50;
+  }
+  
+  /* Custom dropdown arrow */
+  .dropdown-select::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    width: 10px;
+    height: 10px;
+    background-image: url("path/to/dropdown-arrow.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    pointer-events: none;
+    
+  }
+  
+
+
+
+  .button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    transition-duration: 0.3s;
+    border-radius: 1rem;
+  }
+  
+  .button:hover {
+    background-color: #45a049;
+  }
+  
+  .button a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .button a:hover {
+    text-decoration: underline;
+  }
+
+  .buttons {
+    background-color: #c91b0e;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    transition-duration: 0.3s;
+    border-radius: 1rem;
+  }
+  
+  .buttons:hover {
+    background-color: #982d2b;
+  }
+  
+  .buttons a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .buttons a:hover {
+    text-decoration: underline;
+  }
+
+  .authentication-btns{
+    height:100%;
+    width:80%;
+    background-color: blue;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+   
+}
+ .aa{
+  height:100px;
+  margin-left: 100px;
+  margin-top: 50px;
+  
+  
+}
+.a{
+  border-radius: 1rem;
+}
+
+
+.make-admin-button {
+  background-color: green;
+  color: white; /* Text color */
+  padding: 10px 20px; /* Padding around the text */
+  border: none; /* Remove the default button border */
+  border-radius: 5px; /* Rounded button edges */
+  font-size: 16px; /* Font size of the text */
+  text-decoration: none; /* Remove underline from the anchor */
+  display: inline-block; /* Make the button behave like a block element */
+  cursor: pointer; /* Show a pointer cursor on hover */
+  /* Add any other desired styles here */
+}
+
+.make-admin-button:hover {
+  background-color: darkgreen; /* Change background color on hover */
+}
+
+/* Styling for the "Delete User" button */
+.delete-user-button {
+  background-color: red;
+  color: white; /* Text color */
+  padding: 10px 20px; /* Padding around the text */
+  border: none; /* Remove the default button border */
+  border-radius: 5px; /* Rounded button edges */
+  font-size: 16px; /* Font size of the text */
+  text-decoration: none; /* Remove underline from the anchor */
+  display: inline-block; /* Make the button behave like a block element */
+  cursor: pointer; /* Show a pointer cursor on hover */
+  /* Add any other desired styles here */
+}
+
+.delete-user-button:hover {
+  background-color: darkred; /* Change background color on hover */
+}
+
+
+  
